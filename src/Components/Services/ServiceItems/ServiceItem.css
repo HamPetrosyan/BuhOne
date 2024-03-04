@@ -1,0 +1,64 @@
+.service {
+    position: relative;
+}
+
+.service h2 {
+    color: rgb(255, 255, 255);
+}
+
+.service img {
+    width: 350px;
+    height: 360px;
+}
+
+.service::after {
+    content: '';
+    position: absolute;
+    width: 350px;
+    height: 360px;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 95, 163, 0.5);
+    z-index: -1;
+}
+
+.service:hover::after {
+    z-index: 1;
+}
+
+.service:hover .desc {
+    display: block;
+}
+
+.desc {
+    display: none;
+    position: absolute;
+    bottom: 12px;
+    padding: 0 36px;
+    z-index: 2;
+}
+
+@media screen and (max-width: 768px) {
+    .service img {
+        width: 100%;
+        height: 100%;
+    }
+
+    .service::after {
+        width: 100%;
+        height: 100%;
+    }
+
+    .desc {
+        display: none;
+        color: white;
+        width: 316.3px;
+        bottom: 45px;
+        padding: 0 36px;
+        z-index: 2;
+    }
+
+    .service:hover::after {
+        z-index: 1;
+    }
+}

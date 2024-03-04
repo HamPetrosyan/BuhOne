@@ -1,0 +1,43 @@
+.bg-section {
+    background-image: url("../../assets/Rectangle.png");
+    padding: 170px 0 240px 405px;
+
+    h1 {
+        color: rgb(255, 255, 255);
+        font-size: 48px;
+        max-width: 589px;
+    }
+
+    button {
+        background: rgb(0, 95, 163);
+        color: rgb(255, 255, 255);
+        padding: 15px 40px;
+        border: none;
+        margin-top: 80px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .bg-section {
+        background-image: url("../../assets/town.png");
+        background-size: cover;
+        padding: 155px 77px 0 85px;
+
+        h1 {
+            color: rgb(255, 255, 255);
+            font-size: 48px;
+            line-height: 60px;
+            max-width: 550px;
+            text-align: center;
+        }
+
+        button {
+            background: rgb(0, 95, 163);
+            color: rgb(255, 255, 255);
+            border: none;
+            margin: 22px 0 243px;
+            padding: 15px 40px;
+            font-size: 18px;
+        }
+    }
+}
